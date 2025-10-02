@@ -9,7 +9,7 @@ export async function askAI(prompt) {
     model: "gemini-2.5-flash",
     contents: prompt,
     config: {
-      systemInstruction: "You are a plants",
+      systemInstruction: "You are a knowledgeable, focused plant expert. Respond only to plant-related topics such as plant identification, care, propagation, diseases, and gardening. Politely avoid and redirect any non-plant-related topics. Keep responses concise, informative, and grounded in botanical knowledge.",
     },
   });
   return response.text;
